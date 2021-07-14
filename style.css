@@ -1,6 +1,7 @@
 /*------------------------
  Global styles 
  -------------------------*/
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
  body{
@@ -72,19 +73,21 @@
      color: #E02C6D;
      background-color:transparent;
  }
+
+
 /*------------- Header styles-------------- */
  header.container{
      margin: 0 ;
      height: 80px;
-     justify-content: center;   
+     justify-content: center;  
  } 
 .header-wrapper{
-    
      display: flex;
      justify-content: space-between;
      align-items: center;
      z-index: 10;
      padding: 0 15px;
+     width: 1200px; 
  }
  
  .nav-item{
@@ -106,14 +109,19 @@
     color:#E02C6D;
 }
 
- /* -------- Top banner styles ---------- */
 
+ /* -------- Top banner styles ---------- */
  .container-top{
      background-color: #2D25A0;
      margin:-100px  0 0 0;
      z-index: 1;
+     transition: all .5s ease;
+ }
+ .container-top:hover #top-banner-img{
+     transform: translate(20px);
  }
  .top-wrapper{
+     width: 1200px;
      padding:200px 0 80px 0;
  }
  #top-banner-img{
@@ -147,6 +155,7 @@
      margin:0;
  }
 
+
  /* ---------Highlights area styles ----------- */
  .col-highlights{
      display: flex;
@@ -155,6 +164,7 @@
  .highlights-wrapper{
      margin-top: 80px;
  }
+
 
  /*--------------Products styles--------- */
  .products-container{
@@ -201,6 +211,7 @@
      color: #E02C6D;
  }
 
+
  /* Featured area styles */
   .featured-container{
       background-image: url("images/bg-featured.jpg");
@@ -241,6 +252,7 @@
  /*----------------------
   Meadia Queries 
   -----------------------*/
+
 
   /* Mobile devices */
   @media only screen and (max-width:668px) {
@@ -311,6 +323,7 @@
     
   }
 
+
 /* Tablet devices */
 @media only screen and (min-width:668px) and (max-width:1030px){
     h1{
@@ -361,5 +374,4 @@
    
     }
     
-
 }
