@@ -80,6 +80,7 @@
      justify-content: space-between;
      align-items: center;
      z-index: 10;
+     padding: 0 15px;
  }
  
  .nav-item{
@@ -157,6 +158,7 @@
  }
  #footer-logo{
      width: 483.87px;
+     margin-bottom: 20px;
  }
  .social-icons{
      display: flex;
@@ -189,9 +191,12 @@
         flex-wrap: wrap;  
       }
       .wrapper{
-         width: 100%;
+         max-width: 100%;
          flex-direction: column; 
       }
+      .top-wrapper{
+        padding:160px 0;
+    }
       #top-banner-img{
           width:100%;
       }
@@ -215,10 +220,10 @@
      .footer-contents{
         margin-top: 0;
     }
-     .nav-item{
+     .header-contianer{
         display: none;
     }
-}
+  }
 
 /* Tablet devices */
 @media only screen and (min-width:668px) and (max-width:1030px){
@@ -239,7 +244,7 @@
         width:100%;
     }
     .wrapper{
-        width: 100%;
+        max-width: 100%;
          
      }
      .highlights-wrapper{
@@ -248,8 +253,7 @@
      }
     .players{
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px;
-        
+        margin: 20px;   
         
     }
     .col-highlights{
