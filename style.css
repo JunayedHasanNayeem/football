@@ -1,0 +1,261 @@
+/*------------------------
+ Global styles 
+ -------------------------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+ body{
+     margin:0;
+     padding:0;
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     
+ }
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+ }
+ .wrapper{
+    display: flex;
+    width: 1050px;
+ }
+ .col-2{
+     width: 50%;
+ }
+ h1{
+     font-size: 64px;
+     font-weight: 700;
+     line-height: 80px;
+     margin:0;
+ }
+ h2{
+     font-size: 48px;
+     margin:0;
+     line-height: 60px;
+     color: #0A0826;
+ }
+ h4{
+     font-size: 28px;
+     color: #0A0826;
+ }
+ p{
+    color:#6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+ }
+ .light-text{
+    color:#ffffff;
+ }
+ img{
+     width: 100%;
+ }
+ .button{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid #E02C6D;
+    background-color: #E02C6D;
+    color: #ffffff;
+    padding: 10px 24px;
+    transition: all .1s ease;
+    margin-top:30px;
+ }
+ .button-arrow{
+     margin-left: 10px;
+ }
+ .button:hover{
+     border: 2px solid #E02C6D;
+     color: #E02C6D;
+     background-color:transparent;
+ }
+/*------------- Header styles-------------- */
+ header.container{
+     margin: 0 ;
+     height: 80px;
+     justify-content: center;   
+ } 
+.header-wrapper{
+    
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     z-index: 10;
+ }
+ 
+ .nav-item{
+     text-decoration: none;
+     color:#ffffff;
+     margin-right: 15px;
+ }
+.nav-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-button .button{
+    margin-top:0;
+}
+
+ /* -------- Top banner styles ---------- */
+
+ .container-top{
+     background-color: #2D25A0;
+     margin:-100px  0 0 0;
+     z-index: 1;
+ }
+ .top-wrapper{
+     padding:200px 0 80px 0;
+ }
+ #top-banner-img{
+     position: relative;
+     width: 556.01px;
+     transition: all .3s ease;
+ }
+ 
+
+/*-------------- Players area styles ---------- */
+ .players{
+     display: grid;
+     grid-template-columns: 330px 330px 330px;
+     grid-gap: 30px;
+ }
+ .player{
+     padding:15px;
+     background-color: #ffffff;
+     box-shadow:  0px 0px 40px rgba(0, 0, 0, 0.15);
+ }
+
+ .player-img{
+     width: 100%;
+ }
+ .player-name{
+     color:#18191F;
+     margin:10px 0 10px 0;
+ }
+ .player-info{
+     color:#6C6C6C;
+     margin:0;
+ }
+
+ /* ---------Highlights area styles ----------- */
+ .col-highlights{
+     display: flex;
+     align-items: center;
+ }
+ .highlights-wrapper{
+     margin-top: 80px;
+ }
+
+ /* -------------Footer Styles------------ */
+ .footer-wrapper{
+     justify-content: center;
+ }
+ .footer-contents{
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 100px;
+ }
+ #footer-logo{
+     width: 483.87px;
+ }
+ .social-icons{
+     display: flex;
+     justify-content: space-between;
+     width: 170px;
+     
+ }
+ .social-icon{
+     width: 32px;
+     
+ }
+
+ /*----------------------
+  Meadia Queries 
+  -----------------------*/
+
+  /* Mobile devices */
+  @media only screen and (max-width:668px) {
+      h1{
+          font-size: 36px;
+          line-height: 45px;
+      }
+      h2{
+          font-size: 30px;
+          line-height: 40px;
+      }
+      .top-col {
+        margin:5%;
+        width: 95%;
+        flex-wrap: wrap;  
+      }
+      .wrapper{
+         width: 100%;
+         flex-direction: column; 
+      }
+      #top-banner-img{
+          width:100%;
+      }
+      .highlights-wrapper{
+        margin:0;
+     }
+      .players{
+          grid-template-columns: 1fr;
+          margin: 20px;
+      }
+      #highlights-img{
+        width:100%;
+      }
+      .col-highlights{
+        width: 90%;
+        margin: 5%; 
+    }
+      #footer-logo{
+        width: 70%;
+    }
+     .footer-contents{
+        margin-top: 0;
+    }
+     .nav-item{
+        display: none;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width:668px) and (max-width:1030px){
+    h1{
+        font-size: 45px;
+        line-height: 60px;
+    }
+    h2{
+        font-size: 35px;
+        line-height: 50px;
+    }
+    .top-col, .col-nav {
+        margin:2%;
+        width: 45%;
+       
+      }
+    #top-banner-img{
+        width:100%;
+    }
+    .wrapper{
+        width: 100%;
+         
+     }
+     .highlights-wrapper{
+        flex-direction: column;
+        margin:0;
+     }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
+        
+        
+    }
+    .col-highlights{
+        width: 90%;
+        margin: 5%; 
+    }
+    
+
+}
