@@ -118,7 +118,7 @@
      transition: all .5s ease;
  }
  .container-top:hover #top-banner-img{
-     transform: translate(20px);
+     transform: translateY(-20px);
  }
  .top-wrapper{
      width: 1200px;
